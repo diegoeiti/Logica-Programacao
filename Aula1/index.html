@@ -1,11 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exemplo de Tags HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2980b9;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        .tag-example {
+            background-color: #f9f9f9;
+            border-left: 4px solid #3498db;
+            padding: 10px 15px;
+            margin: 15px 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello World! </h1>
+    <h1>Principais Tags HTML</h1>
+    
+    <section>
+        <h2>Estrutura Básica</h2>
+        <div class="tag-example">
+            <p><code>&lt;!DOCTYPE html&gt;</code> - Define o tipo de documento como HTML5</p>
+            <p><code>&lt;html&gt;</code> - Elemento raiz do documento</p>
+            <p><code>&lt;head&gt;</code> - Contém metadados e links para recursos externos</p>
+            <p><code>&lt;body&gt;</code> - Contém o conteúdo visível da página</p>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Cabeçalhos</h2>
+        <div class="tag-example">
+            <h1>Título Nível 1</h1>
+            <h2>Título Nível 2</h2>
+            <h3>Título Nível 3</h3>
+            <h4>Título Nível 4</h4>
+            <h5>Título Nível 5</h5>
+            <h6>Título Nível 6</h6>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Textos e Parágrafos</h2>
+        <div class="tag-example">
+            <p>Este é um parágrafo comum usando a tag <code>&lt;p&gt;</code>.</p>
+            <p><strong>Texto em negrito</strong> com <code>&lt;strong&gt;</code> ou <code>&lt;b&gt;</code>.</p>
+            <p><em>Texto em itálico</em> com <code>&lt;em&gt;</code> ou <code>&lt;i&gt;</code>.</p>
+            <p><u>Texto sublinhado</u> com <code>&lt;u&gt;</code>.</p>
+            <p>Texto <sup>sobrescrito</sup> e <sub>subscrito</sub>.</p>
+            <p><small>Texto pequeno</small> com <code>&lt;small&gt;</code>.</p>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Links e Âncoras</h2>
+        <div class="tag-example">
+            <p><a href="https://www.google.com">Link externo</a> usando <code>&lt;a href="..."&gt;</code>.</p>
+            <p><a href="#top">Link interno</a> (para o topo da página).</p>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Listas</h2>
+        <div class="tag-example">
+            <h3>Lista não ordenada</h3>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+            
+            <h3>Lista ordenada</h3>
+            <ol>
+                <li>Primeiro item</li>
+                <li>Segundo item</li>
+                <li>Terceiro item</li>
+            </ol>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Imagens</h2>
+        <div class="tag-example">
+            <img src="https://via.placeholder.com/150" alt="Imagem de exemplo" width="150">
+            <p>Tag <code>&lt;img src="..." alt="..."&gt;</code></p>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Tabelas</h2>
+        <div class="tag-example">
+            <table border="1">
+                <tr>
+                    <th>Cabeçalho 1</th>
+                    <th>Cabeçalho 2</th>
+                </tr>
+                <tr>
+                    <td>Célula 1</td>
+                    <td>Célula 2</td>
+                </tr>
+                <tr>
+                    <td>Célula 3</td>
+                    <td>Célula 4</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Formulários</h2>
+        <div class="tag-example">
+            <form action="#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome"><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha"><br><br>
+                
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Elementos de Divisão</h2>
+        <div class="tag-example">
+            <div style="background-color: #eee; padding: 10px;">
+                <p>Um elemento <code>&lt;div&gt;</code> é um container genérico.</p>
+            </div>
+            
+            <span style="background-color: #ddd;">Elemento <code>&lt;span&gt;</code> para estilizar parte de um texto.</span>
+        </div>
+    </section>
+    
+    <footer>
+        <p>Este é um rodapé usando a tag <code>&lt;footer&gt;</code>.</p>
+    </footer>
 </body>
 </html>
