@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    background-color:blue;
+    color:aliceblue;
+}
+
+header {
+    margin: 00px;
+    background-color: aqua;
+}
+
+main {
+    font-size: 15px;
+    padding: 10px;
+    margin:11px;
+
+}
+a {
+    margin: 10;
+    color:blanchedalmond;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.5em;
+}
+
+main > section > p {
+    color:blanchedalmond
+}
