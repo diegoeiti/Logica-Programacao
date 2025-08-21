@@ -1,0 +1,42 @@
+
+main {
+    width: 50vw;
+    margin: auto;
+    background-color: bisque;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+h1{
+    text-align:left;
+}
+
+#titulo01 {
+    color:darkblue;
+    
+}
+
+#titulo02 {
+    color:darkred;
+}
+
+#titulo03 {
+    color:darkgreen;
+}
+
+p {
+    text-align: left;
+    background-color: aliceblue;
+}
+
+.p1 {
+    color:darkcyan;
+}
+
+.p2 {
+    color:darkolivegreen;
+}
+
+.p3 {
+    color:darkgoldenrod;
+}

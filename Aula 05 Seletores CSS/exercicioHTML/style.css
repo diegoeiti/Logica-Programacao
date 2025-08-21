@@ -1,0 +1,61 @@
+body {
+    width: 50vw;
+    text-align: left;
+    margin:auto;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+}
+#titulo1 {
+    background-color: #ecf0f1;
+    color:#2c3e50;
+}
+
+#titulo2 {
+    background-color: #e9f7ef;
+    color: #27ae60;
+}
+
+#titulo3 {
+    color: #f39c12;
+    background-color: #fff3e6;
+}
+
+#titulo4 {
+    color: #8e44ad;
+    background-color: #f5e6f5;
+}
+
+/*Criando classes para os h2 */
+.h2titulo1 {
+    font-size: 28px;
+    color: #e74c3c;
+    background-color: #f9ebea;
+}
+
+.h2titulo2 {
+    font-size: 28px;
+    color: #27ae60;
+    background-color: #e9f7ef;
+}
+
+.h2titulo3 {
+    font-size: 28px;
+    color: #f39c12;
+    background-color: #fff3e6;
+}
+
+.h2titulo4 {
+    font-size: 28px;
+    color:#8e44ad;
+    background-color: #f5e6f5;
+}
+
+p {
+    font: 1em;
+    color: #34495e;
+    text-align: justify;
+    line-height: 1.4;
+}
