@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border</title>
+    <style>
+        main {
+            margin:auto;
+            width: 80vw;
+            background-image: linear-gradient(to top, red, yellow, green);
+            border-top: 1px solid black;
+            border-bottom: 1px solid green;
+            border-left: 1px solid yellow;
+            border-right: 1px solid red;
+            box-shadow: 11px 11px 3px rgba(0, 0, 0, 0.468);
+        }
+        
+        #box1 {
+            background-image: linear-gradient(to top, red, yellow, green);
+            border-width: 2px;
+            border-color:rgb(39, 144, 10);
+            border-style:double;
+            border-radius: 15px;
+        }
+
+        #box2 {
+            background-image: linear-gradient(to top, red, yellow, green);
+            border: 2px double rgb(255, 255, 0);
+            border-radius: 15px;
+        }
+
+        #box3 {
+            background-image: linear-gradient(to top, red, yellow, green);
+            border-width: 2px;
+            border-color:rgb(190, 7, 7);
+            border-style:double;
+            border-radius: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div id="box1">
+            Essa é a primeira caixa
+        </div>
+        <br>
+
+        <div id="box2">
+            Essa é a segunda caixa
+        </div>
+        <br>
+
+        <div id="box3">
+            Essa é a terceira caixa
+        </div>
+
+
+    </main>
+
+</body>
+</html>
