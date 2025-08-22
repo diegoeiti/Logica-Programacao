@@ -22,13 +22,14 @@ body {
     display: inline-block;
     margin: 10px;
 
+
 }
 
 .item > img {
     width: 100%;
     margin-bottom: 10px;
     border-radius: 8px;
-    height: 50vw;
+    height: 20vw;
     object-fit:cover;
 }
 
