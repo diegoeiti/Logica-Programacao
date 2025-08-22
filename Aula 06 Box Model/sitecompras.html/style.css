@@ -28,6 +28,8 @@ body {
     width: 100%;
     margin-bottom: 10px;
     border-radius: 8px;
+    height: 50vw;
+    object-fit:cover;
 }
 
 .item > h3 {
@@ -49,7 +51,7 @@ body {
 }
 
 .item > a {
-    background-color: #07abae5d;
+    background-color: #07abaea1;
     padding: 8px 12px;
     border-radius: 10px;
     text-decoration: none;
