@@ -1,0 +1,66 @@
+@import url("cores.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+header {
+    background-image: linear-gradient(to top, red, yellow, green);
+    color: var(--cor-letras-link);
+    padding: 15px;
+    text-align: center;
+}
+
+header > h1 {
+    font-size: 3.2em;
+    margin-top: 15px;
+    text-shadow: 3px 3px 6px;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+}
+
+header > p {
+    font-size: 1.3em;
+    margin-bottom: 8px;
+    font-weight: 300;
+    opacity: 0.5;
+}
+
+nav {
+    margin-top: 30px;
+    margin-bottom: 16px;
+}
+
+nav a {
+    text-decoration: none;
+    background-color: var(--cor-botao-cabecalho);
+    color: var(--cor-letras-link);
+    border-radius: 25px;
+    border: 2px solid var(--cor-botao-cabecalho);
+    margin: 0px 8px;
+    padding: 14px 28px;
+    display: inline-block;
+
+}
+
+nav a:hover{
+    background-color:#ffffff30;
+    transform: scale(1.5);
+}
+
+footer {
+    width: 100vw;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--cor-rodade);
+    position: fixed;
+    bottom: 0;
+    color: var(--cor-letras-link)
+}
+
