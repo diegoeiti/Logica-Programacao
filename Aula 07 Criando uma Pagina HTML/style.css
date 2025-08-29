@@ -3,10 +3,9 @@
 * {
     margin: 0;
     padding: 0;
-    text-align: center;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-
+    align-items: center;
 }
 
 
@@ -54,13 +53,7 @@ nav a:hover{
     transform: scale(1.5);
 }
 
-footer {
-    width: 100vw;
-    padding: 20px;
-    text-align: center;
-    background-color: var(--cor-rodade);
-    position: fixed;
-    bottom: 0;
-    color: var(--cor-letras-link)
-}
+
+
+
 

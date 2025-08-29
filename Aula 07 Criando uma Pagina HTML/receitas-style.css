@@ -1,0 +1,51 @@
+@import url(cores.css);
+
+body {
+    background-color: var(--cor-fundo-body);
+}
+
+.receita-detalhe {
+    max-width: 60vw;
+    margin: 30px auto;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px;  
+    background-color: var(--cor-main);  
+}
+
+.receita-detalhe  h2 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.img-receita {
+    display: block;
+    width: 50%;
+    margin: 10px auto;
+    border-radius: 12px;
+    height: auto;
+}
+
+.receita-detalhe h3 {
+    color: var(--cor-titulo-h3);
+    text-align: center;
+}
+
+.receita-detalhe ul, .receita-detalhe ol{
+    margin-left: 100px;
+    line-height: 1.6;
+   
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    width: 100vw;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--cor-rodade);
+    bottom: 0;
+    color: var(--cor-letras-link)
+}

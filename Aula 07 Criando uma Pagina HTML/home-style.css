@@ -54,3 +54,13 @@ main > h2 {
 .btn-receita:hover {
     transform: translate(2px, -10px);
 }
+
+footer {
+    width: 100vw;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--cor-rodade);
+    position: fixed;
+    bottom: 0;
+    color: var(--cor-letras-link)
+}
