@@ -1,0 +1,27 @@
+#container
+{
+    display: flex;
+    flex-flow: row wrap;
+    width: 60vw;
+    border: 1px solid black;
+    margin: auto;
+    justify-content:space-evenly ; /* controla a quebra de linha
+    /* align-items: stretch; */
+    height: auto;
+    padding: 20px;
+    align-content: stretch;
+    gap: 20px;
+}
+
+.item
+{
+    flex-basis: 50px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 20px;
+    width: 60px;
+    border: 1px solid black;
+    border-radius:15px;
+    text-align: center;
+    display:block;
+}
