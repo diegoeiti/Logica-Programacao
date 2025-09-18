@@ -29,3 +29,7 @@ paragrafo4.style.background = "linear-gradient(to right, yellow, green)";
 let paragrafo5 = document.querySelectorAll(".caixa5")[1]
 paragrafo5.innerText = "Caixa 5 Versao 2"
 paragrafo5.style.background = "linear-gradient(to right, purple, white)";
+
+let paragrafo6 = document.querySelectorAll("p")[4]
+paragrafo6.innerText = "Caixa 5 Versao 3"
+paragrafo6.style.background = "linear-gradient(to right, red, black)";
