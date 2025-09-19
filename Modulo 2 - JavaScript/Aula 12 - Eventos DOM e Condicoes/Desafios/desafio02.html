@@ -67,5 +67,18 @@
     <button onclick="esconder()">Esconder</button>
     <button onclick="mostrar()">Mostrar</button>
   </div>
+
+  <script>
+    function esconder(){
+      let paragrafo = document.getElementById("texto");
+      paragrafo.style.display = "none";
+
+    }
+
+    function mostrar() {
+      let paragrafo = document.getElementById("texto");
+      paragrafo.style.display = "block";
+    }
+  </script>
 </body>
 </html>
