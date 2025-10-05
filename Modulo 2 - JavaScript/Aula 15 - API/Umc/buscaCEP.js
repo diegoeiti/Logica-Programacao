@@ -4,7 +4,7 @@ const cep = document.getElementById("cep")
 
 cep.addEventListener("change", (evento) => {
     let cepUsuario = evento.target
-    console.log(cepUsuario.value)
+    console.log("Imprimindo o cepUsuario.value: " + cepUsuario.value)
     buscaCEP(cepUsuario.value)
 })
 
@@ -16,9 +16,11 @@ async function buscaCEP(cepUsuario){
 
     try {
         let consultaCEP = await fetch(`https://viacep.com.br/ws/${cepUsuario}/json`)
-        console.log(consultaCEP);
         let consultaCEPJson = await consultaCEP.json()
-        console.log(consultaCEPJson);
+        console.log("Response object:", consultaCEP) // ← Agora mostra o objeto completo
+        console.log("Status:", consultaCEP.status) // ← Mostra o status HTTP
+        console.log("OK?", consultaCEP.ok) // ← Mostra se a requisição foi bem-sucedida
+        
 
         if (consultaCEPJson.erro) {
             throw Error ("CEP INEXISTENTE")

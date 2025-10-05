@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+    <form action="">
+        <label for="">Alunos: </label>
+        <input type="text" id="aluno">
+        <br>
+        <label for="">Notas: </label>
+        <input type="text" id="nota">
+    </form>
+        <button onclick="addAluno()">Submit</button>
+        <ul id="lista">
+        </ul>
+        <button onclick="mostrarVerdes()">Mostrar Aprovados</button>
+        <button onclick="mostrarVermelhos()">Mostrar Reprovados</button>
+        <button onclick="mostrarTodos()">Mostrar Todos</button>
+    </div>
+    
+    <script>
+    function addAluno() {
+        const aluno = document.getElementById("aluno").value;
+        const notaNum = Number(document.getElementById("nota").value);
+        const lista = document.getElementById("lista");
+
+
+        if(isNaN(notaNum) || notaNum < 0 || notaNum > 10 ){
+            alert("Digite uma nota válida!")
+            return
+        }
+
+        if(!aluno){
+            alert("Digite um nome!")
+            return
+        }
+
+        const alunoNota = document.createElement("li");
+        alunoNota.className = notaNum >= 6 ? "verde" : "vermelho"; // definindo a classe
+        alunoNota.innerHTML = `
+        <strong>${aluno}</strong> -
+        <span style="color: ${notaNum >= 6 ? "green" : "red"} ">
+            Nota: <strong>${notaNum}</strong>
+        </span>
+        `;
+
+        lista.append(alunoNota);
+        document.getElementById("aluno").value = "";
+        document.getElementById("nota").value = "";
+    }
+
+    function mostrarVerdes(){
+        const alunos = document.querySelectorAll("#lista li");
+        alunos.forEach(li => {
+            li.style.display = li.classList.contains("verde") ? "block" : "none";
+        });
+    }
+
+    function mostrarVermelhos(){
+        const alunos = document.querySelectorAll("#lista li");
+        alunos.forEach(li => {
+            li.style.display = li.classList.contains("vermelho") ? "block" : "none";
+        });
+    }
+
+    function mostrarTodos(){
+        const alunos = document.querySelectorAll("#lista li");
+        alunos.forEach(li => li.style.display = "block")
+    }
+    </script>
+</body>
+</html>
