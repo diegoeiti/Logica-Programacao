@@ -15,7 +15,7 @@
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="#">Cadastrar Usuário</a></li>
-                <li><a href="verificarUsuario.php">Procurar Usuário</a></li>
+                <li><a href="verificarUsuario">Procurar Usuário</a></li>
                 
             </ul>
             
@@ -80,9 +80,9 @@
             if(str_contains($e->getMessage(), "Duplicate entry")) {
                 echo "<div class='mensangem erro'>Email ja cadastrado </div>";
             } else {
-                echo "<div class='mensangem erro'>Erro ao cadastrar, tente novamente! </div>";
+                echo "<div class='mensangem erro'>Erro ao cadastrar, tente novamente </div>";
             }
-
+            echo $e->getMessage();
         }
 
 
