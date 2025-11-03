@@ -33,7 +33,7 @@
             <?php
 
             if (isset($_POST["email"])) {
-                include("../conexao/conexao.php");
+                include("../conexao/conexao-banco.php");
                 $email = $_POST["email"];
 
                 $sql = "SELECT id, nome, sobrenome, email, curso FROM usuarios WHERE email = ?";
