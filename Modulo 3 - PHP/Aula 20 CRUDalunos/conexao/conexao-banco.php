@@ -1,7 +1,7 @@
 <?php
 $host = 'localhost';
 $user = 'root';
-$password = "diegodev123";
+$password = "";
 $database = 'faculdade';
 
 // Criar conexão
