@@ -25,9 +25,9 @@ $sql = "CREATE TABLE usuarios (
     sobrenome VARCHAR(100) NOT NULL,
     email VARCHAR(150) NOT NULL UNIQUE,
     curso VARCHAR(50) NOT NULL,
-    nota_atividade INT NOT NULL DEFAULT 0,
-    nota_prova INT NOT NULL DEFAULT 0,
-    nota_final INT NOT NULL DEFAULT 0,
+    nota_atividade DECIMAL(5,2) NOT NULL DEFAULT 0,
+    nota_prova DECIMAL(5,2) NOT NULL DEFAULT 0,
+    nota_final DECIMAL(5,2) NOT NULL DEFAULT 0,
     data_cadastro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 )";
 
